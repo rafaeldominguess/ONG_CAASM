@@ -163,7 +163,7 @@ Além da aplicação dos conhecimentos técnicos de desenvolvimento web, o proje
 
 ## Autor
 
-Desenvolvido por **Rafael Domingues** como projeto acadêmico para a faculdade Cruzeiro do Sul.
+Desenvolvido por **Rafael Vera Domingues** como projeto acadêmico para a faculdade Cruzeiro do Sul.
 
 ## Licença
 
