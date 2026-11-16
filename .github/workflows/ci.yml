@@ -1,0 +1,29 @@
+name: CI - Build e Testes Automatizados (MVP CAASM)
+
+on:
+  push:
+    branches: [ main, feature/melhorias-mvp ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código-fonte
+        uses: actions/checkout@v4
+
+      - name: Configurar ambiente Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências do projeto
+        run: npm install
+
+      - name: Executar suíte de testes unitários e de integração (Jest)
+        run: npm test
+
+      - name: Validar integridade da estrutura estática (Build)
+        run: test -f index.html && test -f style.css && test -f script.js && echo "Build estático validado com sucesso!"

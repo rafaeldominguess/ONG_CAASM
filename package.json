@@ -1,0 +1,18 @@
+{
+  "name": "projeto-ong-caasm",
+  "version": "1.0.0",
+  "description": "MVP Clube Amigos dos Animais SM",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "script.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2"
+  }
+}
